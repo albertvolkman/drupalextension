@@ -24,7 +24,7 @@ abstract class BaseDriver implements DriverInterface {
   /**
    * Implements DriverInterface::userCreate().
    */
-  public function userCreate(\stdClass $user) {
+  public function userCreate(\stdClass &$user) {
     throw new UnsupportedDriverActionException($this->errorString('create users'), $this);
   }
 

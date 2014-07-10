@@ -61,7 +61,7 @@ class DrupalDriver implements DriverInterface, DrupalSubContextFinderInterface {
   /**
    * Implements DriverInterface::userCreate().
    */
-  public function userCreate(\stdClass $user) {
+  public function userCreate(\stdClass &$user) {
     $this->getCore()->userCreate($user);
   }
 

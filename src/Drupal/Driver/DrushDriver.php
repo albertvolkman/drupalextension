@@ -82,7 +82,7 @@ class DrushDriver extends BaseDriver {
   /**
    * Implements DriverInterface::userCreate().
    */
-  public function userCreate(\stdClass $user) {
+  public function userCreate(\stdClass &$user) {
     $arguments = array(
       $user->name,
     );

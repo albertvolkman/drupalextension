@@ -88,7 +88,7 @@ class Drupal8 implements CoreInterface {
   /**
    * Implements CoreInterface::userCreate().
    */
-  public function userCreate(\stdClass $user) {
+  public function userCreate(\stdClass &$user) {
     $this->validateDrupalSite();
 
     // Default status to TRUE if not explicitly creating a blocked user.

@@ -100,7 +100,7 @@ class Drupal7 implements CoreInterface {
   /**
    * Implements CoreInterface::userCreate().
    */
-  public function userCreate(\stdClass $user) {
+  public function userCreate(\stdClass &$user) {
     // Default status to TRUE if not explicitly creating a blocked user.
     if (!isset($user->status)) {
       $user->status = 1;

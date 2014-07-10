@@ -20,7 +20,7 @@ interface DriverInterface {
   /**
    * Create a user.
    */
-  public function userCreate(\stdClass $user);
+  public function userCreate(\stdClass &$user);
 
   /**
    * Delete a user.
